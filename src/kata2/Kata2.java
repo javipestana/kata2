@@ -12,10 +12,9 @@ public class Kata2 {
             int j = data[i];
             if(!histogram.containsKey(j)){
                 histogram.put(j, 0);
-            }else{
-                histogram.put(j, (histogram.get(j)+1));
-                
             }
+            histogram.put(j, (histogram.get(j)+1));
+    
         }
         for (int key : histogram.keySet()) {
             System.out.println(key + "--> "+histogram.get(key));
